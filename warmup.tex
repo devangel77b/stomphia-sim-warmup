@@ -1,0 +1,82 @@
+\documentclass{amsart}
+
+
+%% Don't edit this part!
+% For revision control
+\usepackage{rcs-multi}
+\rcsid{$Id$}
+\rcsid{$Header$}
+\rcskwsave{$Author$}
+\rcskwsave{$Date$} 
+\rcskwsave{$Revision$}
+%%\rcsRegisterAuthor{devangel}{Dennis Jos{\'e} Evangelista}
+\rcsRegisterAuthor{devangel}{Dennis J. Evangelista}
+\rcsRegisterAuthor{wxy}{WANG Xiaoyu}
+
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{color}
+%\usepackage{makeidx} % incompatible with ams art
+\usepackage{siunitx}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+% PDF metadata
+\usepackage{hyperref}
+\hypersetup{pdftitle={Applied math warmup: solving the heat equation}}
+\hypersetup{pdfauthor={Xiaoyu Wang and Dennis Evangelista}}
+\hypersetup{pdfsubject={biology}}
+\hypersetup{pdfkeywords={biomechanics, applied math, heat equation, diffusion, finite difference method}}
+\hypersetup{colorlinks=true,citecolor=Violet,linkcolor=Blue,urlcolor=Red}
+
+
+
+
+
+
+
+
+\title{Applied math warmup: solving the heat equation}
+\author{Xiaoyu Wang and Dennis Evangelista}
+\address{Department of Integrative Biology, UC Berkeley}
+\email{devangel@berkeley.edu}
+\thanks{Thanks to Christy Hamlet and Lindsay Waldrop for discussions on this topic. Also the methods used here were first introduced to me by Dave Hay and Jim Turso.}
+\date{\today}
+
+\begin{document}
+\begin{abstract}
+This is an example of how to use \LaTeX to write up some notes about math. 
+\end{abstract}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+This is a citation \cite{Baker:2012}
+
+This is an equation:
+\begin{equation}
+\dot{q} = - k \nabla T
+\label{eq:NLC}
+\end{equation}.
+
+This is another equation:
+\begin{equation}
+\frac{\partial T}{\partial t} = 
+k \nabla^2 T + \dot{q}_{gen}
+\label{eq:heat}
+\end{equation}
+
+I can reference equations~\ref{eq:NLC} and \ref{eq:heat} this way. 
+
+\section{Methods}
+\subsection{Submethod one}
+\subsection{Submethod two}
+\subsection{Submethod three}
+
+\section{Results}
+\section{Discussion}
+
+% AMS style references
+\bibliographystyle{amsplain}
+\bibliography{references/warmup}
+\end{document}
