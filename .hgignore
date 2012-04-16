@@ -10,5 +10,7 @@ syntax: glob
 *.out
 *.toc
 *.synctex.gz
+*.pdf
+*.PDF
 
 syntax: regexp
